@@ -1,8 +1,3 @@
-*
-{
-	box-sizing: border-box;
-}
-
 
 body
 {
@@ -20,51 +15,48 @@ header.page-header
 }
 
 /* page navigation menu */
-
 nav
 {
 	float: left;
-	width:200px;
+	width: 200px;
+	margin-top: 4px;
 }
 
 nav ul
 {
 	list-style-type: none;
-	margin-top: 8px;
+	margin: 0px;
+	padding: 0px;
 }
 
 /* menu element */
 nav ul li a
 {
 	display: block;
-	width: 190px;
-	height: 54px;
-	position: relative;
-	left: -40px;
-	margin: 4px 0;
+	width: 162px; /* 190px -28px (z border-box na content-box) */
+	height: 26px; /* 54px - 28px  - || - */
+
 	padding: 12px;
 	border: 2px solid #003566;
+	
+	margin: 4px 0;
+
 	border-radius: 4px;
 	background-color: #cce6ff;
+
+	color: black;
 	font-family: "Comic Sans MS", Arial, Serif;
 	font-size: 18px;
 	text-align: center;
-	text-decoration: none;
-	color: black;
+	text-decoration: none;	
 }
 
-nav ul a:hover
+nav ul a:hover, a.selected
 {
 	padding-top: 10px;
 	border: 4px solid #003566;
-	color: white;
-	background-color: #0069cc;
-}
-
-nav ul a.selected
-{
-	padding-top: 10px;
-	border: 4px solid #003566;
+	width: 158px;
+	height: 24px;
 	color: white;
 	background-color: #0069cc;
 }
