@@ -12,6 +12,7 @@ header
 	border-radius: 4px;
 	background-image: url("gallery/header.JPG");
 	text-align: center;
+	overflow: auto;
 }
 
 
@@ -22,7 +23,7 @@ header h1
 	font-weight: normal;
 	font-family: "Comic Sans MS", cursive;
 	letter-spacing: 10px;
-	margin: 0;
+	margin-top: 0px;
 }
 
 /* page navigation menu */
