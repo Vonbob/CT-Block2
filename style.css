@@ -74,7 +74,7 @@ nav ul a:hover, a.selected
 }
 
 /* main page section */
-section.main-section
+div.main-section
 {
 	float:right;
 	width: 898px;
@@ -82,7 +82,7 @@ section.main-section
 }
 
 /* single news article in the main page section */
-section.main-section article.news
+div.main-section article.news
 {
 	border: 1px solid #0073e6;
 	border-radius: 4px;
@@ -91,7 +91,7 @@ section.main-section article.news
 	font-family: Arial;
 }
 
-section.main-section article.news h2
+div.main-section article.news h2
 {
 	margin-top: 0;
 	margin-left: 0;
@@ -102,26 +102,26 @@ section.main-section article.news h2
 	border-radius: 2px 2px 0 0;
 }
 
-section.main-section article.news p
+div.main-section article.news p
 {
 	padding: 0px 4px;
 }
 
 /* article header with date */
-section.main-section article.news p.news-date
+div.main-section article.news p.news-date
 {
 	color: gray;
 	font-variant: small-caps;
 }
 
 /* article on the Information and About page */
-section.main-section article.about
+div.main-section article.about
 {
 	font-size: 16px;
 	font-family: Arial, sans-serif;
 }
 
-section.main-section article.about h2
+div.main-section article.about h2
 {
 	margin-top: 0;
 	margin-left: 0;
@@ -132,7 +132,7 @@ section.main-section article.about h2
 	border-radius: 4px 4px 0 0;
 }
 
-section.main-section article.about img#image1
+div.main-section article.about img#image1
 {
 	float:right;
 	width:400px;
@@ -140,7 +140,7 @@ section.main-section article.about img#image1
 	border-radius:4px;
 }
 
-section.main-section article.about img#myphoto
+div.main-section article.about img#myphoto
 {
 	float: right;
 	width: 270px;
@@ -149,7 +149,7 @@ section.main-section article.about img#myphoto
 }
 
 /* gallery page */
-section.main-section article#gallery
+div.main-section article#gallery
 {
 	border-radius: 4px;
 	width: 898px;
@@ -159,7 +159,7 @@ section.main-section article#gallery
 	height: 600px; 
 }
 
-section.main-section article#gallery h2
+div.main-section article#gallery h2
 {
 	margin-top: 0;
 	margin-left: 0;
@@ -170,7 +170,7 @@ section.main-section article#gallery h2
 	border-radius: 4px 4px 0 0;
 }
 
-section.main-section article#gallery img
+div.main-section article#gallery img
 {
 	float: left;
 	width: 180px;
@@ -179,7 +179,7 @@ section.main-section article#gallery img
 
 }
 
-section.main-section article#gallery img:hover
+div.main-section article#gallery img:hover
 {
 	width: 178px;
 	height: 178px;
