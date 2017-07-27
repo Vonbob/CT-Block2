@@ -23,7 +23,7 @@ header {
 }
 
 
-header > h1 {
+h1 {
 	color: white;
 	font-size: 40px;
 	font-weight: normal;
@@ -40,14 +40,14 @@ nav {
 	margin-top: 4px;
 }
 
-nav > ul {
+nav ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
 /* menu element */
-nav > ul > li > a {
+nav ul a {
     box-sizing: border-box;
 	display: block;
 	width: 100%;
@@ -81,7 +81,7 @@ div.main-section {
 }
 
 /* single news article in the main page section */
-div.main-section > article.news {
+div.main-section article.news {
     box-sizing: border-box;
 	border: 1px solid #0073e6;
 	border-radius: 4px;
@@ -90,7 +90,7 @@ div.main-section > article.news {
 	font-family: Arial, sans-serif;
 }
 
-article.news > h2 {
+article.news h2 {
     margin-top: 0;
     padding: 2px 4px;
     background-color: #0073e6;
@@ -98,23 +98,23 @@ article.news > h2 {
     border-radius: 2px 2px 0 0;
 }
 
-article.news > p {
+article.news p {
 	padding: 0px 4px;
 }
 
 /* article header with date */
-article.news > p.news-date {
+article.news p.news-date {
 	color: gray;
 	font-variant: small-caps;
 }
 
 /* article on the Information and About page */
-div.main-section > article.about {
+div.main-section article.about {
 	font-size: 16px;
 	font-family: Arial, sans-serif;
 }
 
-article.about > h2 {
+article.about h2 {
 	margin-top: 0;
 	padding: 2px 4px;
 	background-color: #0073e6;
@@ -122,18 +122,18 @@ article.about > h2 {
 	border-radius: 4px 4px 0 0;
 }
 
-article.about > p {
+article.about p {
     text-align: justify;
 }
 
-article.about img#image1 {
+img#image1 {
 	float:right;
     max-width: 50%;
 	border-radius:4px;
     margin-left: 4%;
 }
 
-article.about img#myphoto {
+img#myphoto {
 	float: right;
 	max-width: 50%;
 	border-radius: 16px;
@@ -141,7 +141,7 @@ article.about img#myphoto {
 }
 
 /* gallery page */
-div.main-section article#gallery {
+article#gallery {
 	border-radius: 4px;
 	width: 100%;
 	font-size: 16px;
@@ -149,7 +149,7 @@ div.main-section article#gallery {
 	overflow: auto; 
 }
 
-article#gallery > h2 {
+article#gallery h2 {
 	margin-top: 0;
 	padding: 2px 4px;
 	background-color: #0073e6;
