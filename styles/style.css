@@ -3,9 +3,10 @@ body {
 }
 
 .container {
-	width: 58%;
-	margin: 0 auto;
+    width: 58%;
+    margin: 0 auto;
     overflow: auto;
+    transition: width 1s;
 }
 
 /* main page header with background image */
@@ -26,7 +27,7 @@ header > h1 {
 	color: white;
 	font-size: 40px;
 	font-weight: normal;
-	font-family: "Comic Sans MS", cursive;
+	font-family: 'Fredericka the Great', 'Comic Sans MS', cursive;
 	letter-spacing: 10px;
     line-height: 0.9em;
 	margin-top: 0px;
@@ -61,7 +62,7 @@ nav > ul > li > a {
 	background-color: #cce6ff;
 
 	color: black;
-	font-family: "Comic Sans MS", cursive;
+    font-family: Arial, sans-serif;
 	font-size: 18px;
 	text-align: center;
 	text-decoration: none;	
@@ -86,15 +87,15 @@ div.main-section > article.news {
 	border-radius: 4px;
 	width: 100%;
 	margin-bottom: 4px;
-	font-family: Arial;
+	font-family: Arial, sans-serif;
 }
 
 article.news > h2 {
-	margin-top: 0;
-	padding: 2px 4px;
-	background-color: #0073e6;
-	color: white;
-	border-radius: 2px 2px 0 0;
+    margin-top: 0;
+    padding: 2px 4px;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 2px 2px 0 0;
 }
 
 article.news > p {
@@ -140,18 +141,15 @@ article.about img#myphoto {
 }
 
 /* gallery page */
-div.main-section article#gallery
-{
+div.main-section article#gallery {
 	border-radius: 4px;
 	width: 100%;
 	font-size: 16px;
 	font-family: Arial;
 	overflow: auto; 
-	/*height: 600px;*/ 
 }
 
-article#gallery > h2
-{
+article#gallery > h2 {
 	margin-top: 0;
 	padding: 2px 4px;
 	background-color: #0073e6;
@@ -163,6 +161,7 @@ article#gallery .img-container {
     box-sizing: border-box;
     float: left;
     border: 1px solid lightgrey;
+    border-radius: 1px;
     margin-right: 1%;
     margin-bottom: 4px;
     width: 24%;
@@ -175,6 +174,7 @@ article#gallery .img-container:hover {
 .img-container img {
     width: 100%;
     display: block;
+    border-radius: 1px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1120px) {
