@@ -3,9 +3,11 @@
 }
 
 .container {
+    max-width: 1140px;
     width: 95%;
     margin: 0 auto;
     overflow: auto;
+    font-family: Arial, sans-serif;
     transition: width 1s;
 }
 
@@ -22,13 +24,22 @@ header {
 }
 
 h1 {
-    color: white;
+    font-family: 'Fredericka the Great', 'Comic Sans MS', cursive;
     font-size: 40px;
     font-weight: normal;
-    font-family: 'Fredericka the Great', 'Comic Sans MS', cursive;
     letter-spacing: 10px;
     line-height: 0.9em;
+    color: white;
     margin-top: 0px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding: 2px 4px;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 4px 4px 0 0;
 }
 
 nav {
@@ -53,7 +64,6 @@ nav ul a {
     border-radius: 4px;
     background-color: #cce6ff;
     color: black;
-    font-family: Arial, sans-serif;
     font-size: 18px;
     text-align: center;
     text-decoration: none;
@@ -64,9 +74,25 @@ nav ul a:hover, a.selected {
     background-color: #0069cc;
 }
 
-div.main-section {
+.main-section {
     width: 100%;
     margin-top: 8px;
+}
+
+article {
+    font-size: 16px;
+}
+
+article p {
+    margin-top: 8px;
+    text-align: justify;
+}
+
+article img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    display: block;
 }
 
 article.news {
@@ -75,15 +101,12 @@ article.news {
     border-radius: 4px;
     width: 100%;
     margin-bottom: 4px;
-    font-family: Arial, sans-serif;
 }
 
 article.news h2 {
-    margin-top: 0;
-    padding: 2px 4px;
-    background-color: #0073e6;
-    color: white;
-    border-radius: 2px 2px 0 0;
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
 }
 
 article.news p {
@@ -95,89 +118,33 @@ article.news p.news-date {
     font-variant: small-caps;
 }
 
-div.main-section article.about {
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-}
-
-article.about h2 {
-    margin-top: 0;
-    padding: 2px 4px;
-    background-color: #0073e6;
-    color: white;
-    border-radius: 4px 4px 0 0;
-}
-
-article.about p {
-    text-align: justify;
-}
-
-img#image1 {
-    max-width: 100%;
-    border-radius: 4px;
-}
-
-img#myphoto {
-    max-width: 100%;
-    border-radius: 16px;
-    margin-bottom: 4px;
-}
-
-article#gallery {
-    border-radius: 4px;
+.gallery {
     width: 100%;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    overflow: auto;
 }
 
-article#gallery h2 {
-    margin-top: 0;
-    padding: 2px 4px;
-    background-color: #0073e6;
-    color: white;
-    border-radius: 4px 4px 0 0;
-}
-
-article#gallery .img-container {
+.gallery img {
     box-sizing: border-box;
+    display: block;
     border: 1px solid lightgrey;
     border-radius: 1px;
-    margin-right: 2%;
     margin-bottom: 4px;
-    width: 98%;
+    width: 100%;
 }
 
-article#gallery .img-container:hover {
+.gallery img:hover {
     border: 1px solid grey;
 }
 
-.img-container img {
-    width: 100%;
-    display: block;
-    border-radius: 1px;
-}
-
 @media (min-width: 320px) {
-    img#myphoto {
+    article img {
         max-width: 50%;
         float: right;
-        margin-left: 8px;
-    }
-}
-
-@media (min-width: 460px) {
-    img#image1 {
-        float: right;
-        max-width: 50%;
-        border-radius: 4px;
-        margin-left: 4%;
-        margin-bottom: 4px;
+        margin-left: 2%;
     }
 }
 
 @media (min-width: 569px) {
-    article#gallery .img-container {
+    .gallery img {
         float: left;
         margin-right: 1%;
         width: 49%;
@@ -190,21 +157,13 @@ article#gallery .img-container:hover {
         float: left;
     }
 
-    div.main-section {
+    .main-section {
         float: right;
         width: 81%;
-        margin-top: 8px;
     }
 
-    article#gallery .img-container {
-        margin-right: 1%;
+    .gallery img {
         width: 24%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 60%;
     }
 }
 
